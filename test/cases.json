@@ -1,0 +1,43 @@
+{
+ "tests": [
+  {
+   "in": {
+    "pem": "-----BEGIN CERTIFICATE REQUEST-----\nMIIBOjCB4AIBADA9MQswCQYDVQQGEwJUUjERMA8GA1UECgwIT3JuZWsgQVMxGzAZ\nBgNVBAMMEnBvcnRhbC5leGFtcGxlLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEH\nA0IABGaiwAwf4KYcIYNlxR6Pu+t+ODdrjU5nACAFPiEsRL+avUlqRQUZk7dPDnmq\ntPzw/OBQlZUuiYHh2H9f/op03PmgQTA/BgkqhkiG9w0BCQ4xMjAwMC4GA1UdEQQn\nMCWCEnBvcnRhbC5leGFtcGxlLmNvbYIPdnBuLmV4YW1wbGUuY29tMAoGCCqGSM49\nBAMCA0kAMEYCIQDEjVoAPH2FPvtujfP2Dj4l3U6tsTxaMcStvDjqakRNUgIhANte\n9km6vur5JjAHOmj51y7YI3qwWBgg0GX/UQIVlmPp\n-----END CERTIFICATE REQUEST-----\n",
+    "host": "vpn.example.com"
+   },
+   "v": {
+    "cn": "portal.example.com",
+    "san": [
+     "DNS:portal.example.com",
+     "DNS:vpn.example.com"
+    ],
+    "algo": "EC",
+    "bits": 256,
+    "match": true
+   }
+  },
+  {
+   "in": {
+    "pem": "-----BEGIN CERTIFICATE REQUEST-----\nMIIChTCCAW0CAQAwQDELMAkGA1UEBhMCREUxFjAUBgNVBAoMDUJlaXNwaWVsIEdt\nYkgxGTAXBgNVBAMMEG1haWwuZXhhbXBsZS5jb20wggEiMA0GCSqGSIb3DQEBAQUA\nA4IBDwAwggEKAoIBAQDAoDOyRp8xLJE80yuWg8ctZUIvBG29qX+JVqKlRtN90y1B\nr2Q1wW88ymbwoOysCXugbhAcnApWh0FZRknocthT8bP3rEKP4TzY4RozApbpsYCM\nPQE0gXoeSfG8lYRnuzaIpPD2eDUIlvN5GbO783v3/safkGR3NSLQQmHXbBmd4JVF\ns07vU/6z+GplkQ1ozmrDC1EOW4o7gedE6iIV9ZL+rYTwQgOlw1gScesYnVlS4dMv\nCsUzceB/fs6ZKKoCOpf3hbIIOVc11yxDRxxCkKrR1nrFIX1mAhVNB6AUsfN+Yhiw\nzg50qch0yW53TKvZcU1rLXfhhPurE+/g30P0N3+LAgMBAAGgADANBgkqhkiG9w0B\nAQsFAAOCAQEAMSyi+sEqvm2SYn7vQqYS/0oykjELhD7osw1/UmBS/B/LoCm4Go+v\nwpr8Lq4oAcY3Hq795G1wEEAg1YKpJCjVFD7NPlwjUs39uH/+q/srfhcCbYFV3fa1\nJVZgmIn30HYUO90AGYiJVd6YmxXyYs0r0z9w/aIQoPBjn+kKNAJQ5JPViKY4LZ+V\nS7UO/3pS4PPEivBh3ggNOag2IIetxtx3dK3xHdT7jZbNda1//r631lMQNXTlo287\nL5T6p/1lHeFfQVe1MeAClqyh4qGFg3uTAN/roRXD0P3gVxljtPQmrg1MY2ycBFJb\nXhzn8jJ0wlMtQS22595AOCGXE/4gk9IuGw==\n-----END CERTIFICATE REQUEST-----\n"
+   },
+   "v": {
+    "cn": "mail.example.com",
+    "san": [],
+    "algo": "RSA",
+    "bits": 2048
+   }
+  },
+  {
+   "in": {
+    "pem": "-----BEGIN CERTIFICATE-----\nMIIBlDCCATmgAwIBAgIFBKGyw9QwCgYIKoZIzj0EAwIwODELMAkGA1UEBhMCVFIx\nETAPBgNVBAoMCE9ybmVrIEFTMRYwFAYDVQQDDA1Pcm5layBUZXN0IENBMB4XDTI2\nMDYwMTAwMDAwMFoXDTI3MDYzMDAwMDAwMFowGjEYMBYGA1UEAwwPd3d3LmV4YW1w\nbGUuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEK8NCS68dnBxUmm8rk+QL\n81DwaczjsIxsPsfO+u7XorRbKjJ7qAm0iIBXTikCAFdaYj0JdAC8SJNAmCAjSAD7\nk6NOMEwwJwYDVR0RBCAwHoIPd3d3LmV4YW1wbGUuY29tggtleGFtcGxlLmNvbTAT\nBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMAoGCCqGSM49BAMCA0kA\nMEYCIQDCAHg9Y9nmD3zptt+TJboNIB17g7cO8IZJTOj397R1vgIhALeKsNm+q81S\nhBblTgfJX/4IJ6UHpny34TjvoM789eA3\n-----END CERTIFICATE-----\n"
+   },
+   "err": "pem"
+  },
+  {
+   "in": {
+    "pem": "abc"
+   },
+   "err": "pem"
+  }
+ ]
+}
